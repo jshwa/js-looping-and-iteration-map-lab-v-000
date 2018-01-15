@@ -7,6 +7,7 @@ function nameToAttributes(drivers) {
   return drivers.map(function (driver) {
     driver.filter(function (char) {
       char === " "
+      console.log(char)
     })
     console.log(driver)
   })
