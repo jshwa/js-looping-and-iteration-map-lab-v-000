@@ -8,3 +8,9 @@ function nameToAttributes(drivers) {
     return {"firstName": driver.split(" ")[0], "lastName": driver.split(' ')[1]};
   })
 }
+
+function attributesToPhrase(drivers) {
+  return drivers.map(function () {
+    return "${driver.name} is from ${driver.hometown}"
+  })
+}
