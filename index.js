@@ -5,10 +5,7 @@ function lowerCaseDrivers(drivers) {
 
 function nameToAttributes(drivers) {
   return drivers.map(function (driver) {
-    return driver.map(function (char) {
-      char === " "
-      console.log(char)
-    })
+    driver.split(" ")
     console.log(driver)
   })
 }
